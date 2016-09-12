@@ -10,7 +10,7 @@ cat << 'EOF' > "cmd.txt"
 
   CURRENT_COMMIT=`git rev-parse HEAD`
 
-  # git pull origin master
+  git pull origin master
 
   cd ruby
 
