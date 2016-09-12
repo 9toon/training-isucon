@@ -10,7 +10,7 @@ cat << 'EOF' > "cmd.txt"
 
   CURRENT_COMMIT=`git rev-parse HEAD`
 
-  git pull origin master
+  # git pull origin master
 
   cd ruby
 
@@ -57,4 +57,4 @@ EOF
 cmd=`cat "cmd.txt"`
 rm "cmd.txt"
 
-ssh isucon@$IPADDR "${cmd}"
+ssh -i ~/.ssh/isucon-training.pem isucon@$IPADDR "${cmd}"
